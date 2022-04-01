@@ -1,8 +1,12 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View, TextInput, Button } from 'react-native';
 
 const LoginForm = () => (
-  <Text>My login form:</Text>
+  <View>
+    <TextInput placeholder='Email' />
+    <TextInput placeholder='Contraseña' />
+    <Button title='Enviar' onPress={() => {console.log('Enviado')}} />
+  </View>
 );
 
 export default LoginForm;
