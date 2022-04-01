@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar'
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import LoginForm from './src/components/loginForm'
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import LoginForm from './src/comps/LoginForm';
 
 const App = () => {
   const styles = StyleSheet.create({
@@ -11,16 +11,16 @@ const App = () => {
       alignItems: 'center',
       justifyContent: 'center',
     },
-  })
+  });
 
   return (
-  <View style={styles.container}>
-    <Text>Hello world!</Text>
-    <Text>Hello device!</Text>
-    <LoginForm />
-    <StatusBar />
-  </View>
-  )
-}
+    <View style={styles.container}>
+      <Text>Hello world!</Text>
+      <Text>Hello device!</Text>
+      <LoginForm />
+      <StatusBar />
+    </View>
+  );
+};
 
-export default App
+export default App;
