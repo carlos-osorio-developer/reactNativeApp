@@ -15,12 +15,14 @@ const App = () => {
   });
 
   return (
-    <View style={styles.container}>
-      <Text>Hello world!</Text>
-      <Text>Hello device!</Text>
-      <LoginForm />
-      <StatusBar />
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Text>Hello world!</Text>
+        <Text>Hello device!</Text>
+        <LoginForm />
+        <StatusBar />
+      </View>
+    </NavigationContainer>
   );
 };
 
